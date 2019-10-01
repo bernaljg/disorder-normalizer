@@ -132,7 +132,7 @@ public class Terminology {
         String cui = "";
         try (BufferedReader br = new BufferedReader(new FileReader(terminologyFile))) {
             String line;
-            int index = 0;
+            Integer index = 0;
             while ((line = br.readLine()) != null) {
                 line = line.trim();
                 if (line.equals(""))
@@ -147,7 +147,7 @@ public class Terminology {
                     loadMaps(conceptName, cui);
 
                 if (index % 10000 == 0){
-                    System.out.println(String.format("Finished loading % examples", index));
+                    System.out.println(String.format("Finished loading %d examples", index));
                 }
                 index++;
             }
