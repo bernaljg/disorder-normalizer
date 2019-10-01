@@ -74,8 +74,12 @@ public class Main {
      * @throws IOException
      */
     public void runMultiPassSieve() throws IOException {
+        System.out.println("Loading Terminology");
         Sieve.setStandardTerminology();
+        System.out.println("Finished Loading Terminology");
         Sieve.setTrainingDataTerminology();
+        System.out.println("Done Setting Training Data Terms");
+
         
         List<DocumentConcepts> dataset = Documents.getDataSet();
         for (DocumentConcepts concepts : dataset) {
