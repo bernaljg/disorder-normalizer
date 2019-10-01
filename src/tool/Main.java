@@ -79,7 +79,6 @@ public class Main {
         System.out.println("Finished Loading Terminology");
         Sieve.setTrainingDataTerminology();
         System.out.println("Done Setting Training Data Terms");
-
         
         List<DocumentConcepts> dataset = Documents.getDataSet();
         for (DocumentConcepts concepts : dataset) {
